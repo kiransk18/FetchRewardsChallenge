@@ -23,7 +23,7 @@ mvn spring-boot:run
 
 
 
-**The PaymentRewardsService handles three types of requests. **
+The PaymentRewardsService handles three types of requests. 
 
 #### 5.1 Add Transaction request
    The Add Transaction request adds the transaction to the system and updates points. The Service will throw an exception if the total balance or payer's balance is    insufficient. Response contains transaction success message or the error message.
