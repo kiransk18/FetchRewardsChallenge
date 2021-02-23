@@ -39,7 +39,7 @@ The PaymentRewardsService handles three types of requests.
     }
     
     Sample Response:
-    1. If success, "Transaction Executed Successfully" message is .
+    1. If success, response will be the message "Transaction Executed Successfully" .
     2. If error, you will see either of the below messages
        2.1 "Insufficient Points Balance"
        2.2 "Insufficient Payer Points Balance"
@@ -59,8 +59,8 @@ The PaymentRewardsService handles three types of requests.
     
     Sample Response:
     
-    On Success: [{"payer":"MILLER COORS","points":-200},{"payer":"DANNON","points":-200}]
-    On Error: "Insufficient Points Balance"
+    If success: [{"payer":"MILLER COORS","points":-200},{"payer":"DANNON","points":-200}]
+    If error: "Insufficient Points Balance"
     
 
 #### 5.3 Get balance of all the payers 
