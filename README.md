@@ -38,6 +38,13 @@ The PaymentRewardsService handles three types of requests.
         "timeStamp": "2020-09-02T14:00:00Z"
     }
     
+    Sample Response:
+    1. If success, "Transaction Executed Successfully" message is .
+    2. If error, you will see either of the below messages
+       2.1 "Insufficient Points Balance"
+       2.2 "Insufficient Payer Points Balance"
+       2.3 "Points can't be zero"
+    
 
 #### 5.2 Spend Points request 
    Points are spent following the two rules mentioned in the project description and response is a list of { "payer": <string>, "points": <integer> }
@@ -52,7 +59,8 @@ The PaymentRewardsService handles three types of requests.
     
     Sample Response:
     
-    [{"payer":"MILLER COORS","points":-200},{"payer":"DANNON","points":-200}]
+    On Success: [{"payer":"MILLER COORS","points":-200},{"payer":"DANNON","points":-200}]
+    On Error: "Insufficient Points Balance"
     
 
 #### 5.3 Get balance of all the payers 
